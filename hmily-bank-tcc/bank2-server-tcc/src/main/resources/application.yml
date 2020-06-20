@@ -1,0 +1,48 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: bank2-server-tcc
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.96.3.100:3306/bank2?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.96.3.100:8848
+
+logging:
+  level:
+    root: info
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  typeAliasesPackage: com.wry.dtx.bank2.entity
+  global-config:
+    db-config:
+      field-strategy: not-empty
+      id-type: auto
+      db-type: mysql
+
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+
+org:
+  dromara:
+    hmily :
+      serializer : kryo
+      recoverDelayTime : 128
+      retryMax : 30
+      scheduledDelay : 128
+      scheduledThreadMax :  10
+      repositorySupport : db
+      started: false
+      hmilyDbConfig :
+        driverClassName  : com.mysql.cj.jdbc.Driver
+        url :  jdbc:mysql://39.96.3.100:3306/hmily?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&nullCatalogMeansCurrent=true
+        username : root
+        password : 123456

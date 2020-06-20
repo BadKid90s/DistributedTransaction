@@ -13,8 +13,8 @@
 
 
     <modules>
-        <module>bank1-server</module>
-        <module>bank2-server</module>
+        <module>bank1-server-2pc</module>
+        <module>bank2-server-2pc</module>
     </modules>
 
 </project>
