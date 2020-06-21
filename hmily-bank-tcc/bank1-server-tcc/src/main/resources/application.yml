@@ -6,7 +6,7 @@ spring:
     name: bank1-server-tcc
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://39.96.3.100:3306/bank1?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://39.96.3.100:3306/bank1?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT+8&nullCatalogMeansCurrent=true
     username: root
     password: 123456
   cloud:
@@ -43,6 +43,6 @@ org:
       started: true
       hmilyDbConfig :
         driverClassName  : com.mysql.cj.jdbc.Driver
-        url :  jdbc:mysql://39.96.3.100:3306/hmily?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&nullCatalogMeansCurrent=true
+        url :  jdbc:mysql://39.96.3.100:3306/hmily?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT+8&nullCatalogMeansCurrent=true
         username : root
         password : 123456

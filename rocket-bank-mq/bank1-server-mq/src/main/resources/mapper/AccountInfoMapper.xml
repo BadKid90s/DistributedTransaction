@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wry.dtx.bank1.mapper.AccountInfoMapper">
+  <resultMap id="BaseResultMap" type="com.wry.dtx.bank1.entity.AccountInfo">
+    <!--@mbg.generated-->
+    <!--@Table account_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="account_no" jdbcType="VARCHAR" property="accountNo" />
+    <result column="account_password" jdbcType="VARCHAR" property="accountPassword" />
+    <result column="account_balance" jdbcType="DECIMAL" property="accountBalance" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, account_name, account_no, account_password, account_balance
+  </sql>
+</mapper>

@@ -1,0 +1,33 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: bank1-server-mq
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.96.3.100:3306/bank1?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+
+logging:
+  level:
+    root: info
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  typeAliasesPackage: com.wry.dtx.bank1.entity
+  global-config:
+    db-config:
+      field-strategy: not-empty
+      id-type: auto
+      db-type: mysql
+
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+
+rocketmq:
+  name-server: 39.96.3.100:9876
+  producer:
+    group: producer_bank1

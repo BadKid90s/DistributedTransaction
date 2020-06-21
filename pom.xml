@@ -12,6 +12,7 @@
     <modules>
         <module>seata-bank-2pc</module>
         <module>hmily-bank-tcc</module>
+        <module>rocket-bank-mq</module>
     </modules>
 
 </project>
