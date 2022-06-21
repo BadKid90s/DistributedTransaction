@@ -20,7 +20,7 @@
         <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
         <mybatis-plus.version>3.3.2</mybatis-plus.version>
-        <mysql.version>8.0.19</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
 
     <dependencies>
